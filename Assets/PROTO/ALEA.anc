@@ -1,0 +1,62 @@
+<?xml version = "1.0" standalone = "yes"?>
+<ancillary_model_data version = "1.0">
+
+    <articulations>
+        <articulation name = "ALEA" type = "transform">
+            <stage init = "1" max = "1" min = "0" name = "Size" type = "uniformScale" />
+            <stage init = "0" max = "360" min = "-360" name = "Roll" type = "xRotate" />
+            <stage init = "0" max = "360" min = "-360" name = "Pitch" type = "yRotate" />
+            <stage init = "0" max = "360" min = "-360" name = "Yaw" type = "zRotate" />
+            <stage init = "0" max = "1000" min = "-1000" name = "MoveX" type = "xTranslate" />
+            <stage init = "0" max = "1000" min = "-1000" name = "MoveY" type = "yTranslate" />
+            <stage init = "0" max = "1000" min = "-1000" name = "MoveZ" type = "zTranslate" />
+            <assigned_nodes>
+                Master
+            </assigned_nodes>
+        </articulation>
+    </articulations>
+
+    <solar_panel_groups>
+        <solar_panel_group efficiency = "29.5" name = "+Z Cell 1">
+            <assigned_nodes>
+                pZCell1
+            </assigned_nodes>
+        </solar_panel_group>
+        <solar_panel_group efficiency = "29.5" name = "+Z Cell 2">
+            <assigned_nodes>
+                pZCell2
+            </assigned_nodes>
+        </solar_panel_group>
+        <solar_panel_group efficiency = "29.5" name = "-Y Cell 1">
+            <assigned_nodes>
+                nYCell1
+            </assigned_nodes>
+        </solar_panel_group>
+        <solar_panel_group efficiency = "29.5" name = "-Y Cell 2">
+            <assigned_nodes>
+                nYCell2
+            </assigned_nodes>
+        </solar_panel_group>
+        <solar_panel_group efficiency = "29.5" name = "+Y Cell 1">
+            <assigned_nodes>
+                pYCell1
+            </assigned_nodes>
+        </solar_panel_group>
+        <solar_panel_group efficiency = "29.5" name = "+Y Cell 2">
+            <assigned_nodes>
+                pYCell2
+            </assigned_nodes>
+        </solar_panel_group>
+        <solar_panel_group efficiency = "28" name = "-X Cell 1">
+            <assigned_nodes>
+                nXCell1
+            </assigned_nodes>
+        </solar_panel_group>
+        <solar_panel_group efficiency = "29.5" name = "-X Cell 2">
+            <assigned_nodes>
+                nXCell2
+            </assigned_nodes>
+        </solar_panel_group>
+    </solar_panel_groups>
+	
+</ancillary_model_data>
