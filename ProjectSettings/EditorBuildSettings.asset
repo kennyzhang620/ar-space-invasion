@@ -11,4 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UAR/InstantTracker.unity
     guid: 36dab510fdf38466fac77d73ab770554
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8a3695b6afca140a2b687c1f6d1e81ca, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8b3189ca401c84b2bafcf3d487a9db65, type: 2}
