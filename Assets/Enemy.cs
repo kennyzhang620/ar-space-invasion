@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
 
     public void OnShot(AutoGun G, RaycastHit R)
     {
-        var dp = R.collider.gameObject.GetComponent<DamageParameters>();
+        var dp = G.gameObject.GetComponent<DamageParameters>();
 
         if (dp != null)
         {
@@ -58,15 +58,19 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((transform.position - _player.position).magnitude > hitDistance)
+        if (_player != null)
         {
-            transform.LookAt(_player.position, Vector3.up);
-            transform.Translate(Vector3.forward*Speed);
+            if ((transform.position - _player.position).magnitude > hitDistance)
+            {
+                transform.LookAt(_player.position, Vector3.up);
+                transform.Translate(Vector3.forward * Speed);
+            }
         }
 
         if (Health <= 0)
         {
-            source.Destroyed(Identifier);
+            if (source != null)
+                source.Destroyed(Identifier);
             Destroy(gameObject);
         }
     }

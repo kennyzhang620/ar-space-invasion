@@ -1,0 +1,5 @@
+/Users/ktzhang/MOPS+CDH/ar-space-invasion/.utmp/RelWithDebInfo/6m1r1d1d/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/ktzhang/MOPS+CDH/ar-space-invasion/.utmp/RelWithDebInfo/6m1r1d1d/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/ktzhang/MOPS+CDH/ar-space-invasion/.utmp/RelWithDebInfo/6m1r1d1d/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+/Users/ktzhang/MOPS+CDH/ar-space-invasion/.utmp/RelWithDebInfo/6m1r1d1d/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+/Users/ktzhang/MOPS+CDH/ar-space-invasion/.utmp/RelWithDebInfo/6m1r1d1d/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir
