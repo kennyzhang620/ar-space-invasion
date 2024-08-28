@@ -122,10 +122,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerName: AutoHandPlayer
+  Identifier: 0
   Health: 1
+  Armour: 0
   Damage: 1
   hitDistance: 0.5
-  Speed: 0.005
+  Speed: 0.05
+  SpawnRate: 0.05
+  source: {fileID: 0}
 --- !u!54 &721110677930248256
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -170,7 +174,19 @@ MonoBehaviour:
   hitDecalLifetime: 0
   OnShotEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3804530746007504430}
+        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
+        m_MethodName: OnShot
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &5150193692844783644
 PrefabInstance:
   m_ObjectHideFlags: 0
