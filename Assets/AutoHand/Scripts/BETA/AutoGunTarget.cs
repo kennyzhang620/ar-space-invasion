@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Autohand {
     [RequireComponent(typeof(Rigidbody))]
@@ -9,6 +10,8 @@ namespace Autohand {
         public ParticleSystem hitParticle;
         public float hitDecalLifetime;
         public UnityGunHitEvent OnShotEvent;
+        [System.Serializable] public class UnityGunHitEventAlternative : UnityEvent<GameObject, RaycastHit> { }
+        public UnityGunHitEventAlternative OnShotNotAH;
 
 
         Dictionary<GameObject, float> decalLifetimeTracker = new Dictionary<GameObject, float>();
@@ -19,6 +22,13 @@ namespace Autohand {
         public virtual void OnShot(AutoGun gun, RaycastHit hit){
             OnShotEvent?.Invoke(gun, hit);
              CreateHitParticle(hit);
+            CreateHitDecal(hit);
+        }
+
+        public virtual void OnShot(GameObject gun, RaycastHit hit)
+        {
+            OnShotNotAH?.Invoke(gun, hit);
+            CreateHitParticle(hit);
             CreateHitDecal(hit);
         }
 
